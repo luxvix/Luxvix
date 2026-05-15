@@ -267,6 +267,9 @@ Busca scripts usando el buscador o explora las tarjetas. Haz clic en cualquiera 
 
 <script>
 
+const preloadAura = new Image();
+preloadAura.src = "https://i.ibb.co/VYb2R55k/aura-o-laura.jpg";
+
 const cards = document.querySelectorAll('.card');
 
 let audioCtx;
@@ -309,7 +312,6 @@ cards.forEach(c=>{
     c.addEventListener("mouseenter", ()=> playSound(600,0.05,0.03));
 });
 
-/* 🔥 SOLO ESTA PARTE CAMBIADA */
 function sugerencias(){
 
     const input = searchInput.value.toLowerCase().trim();
